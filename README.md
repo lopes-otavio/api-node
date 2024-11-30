@@ -59,32 +59,28 @@ A aplicação estará disponível em `http://localhost:3333`
  - Retorna 404 se o relatório não for encontrado
 
 ## 📂 Estrutura do Projeto
-    src/
-      ├── mock/
-      │   ├── headerMapping.ts
-      │   ├── AccidentReport.ts
-      │   ├── Address.ts
-      │   ├── index.ts
-      │   ├── Suitor.ts
-      │   ├── Vehicle.ts
-      │   └── VehicleRegistration.ts
-      ├── models/
-      │   ├── AccidentReport.ts
-      │   ├── Address.ts
-      │   ├── index.ts
-      │   ├── Suitor.ts
-      │   ├── Vehicle.ts
-      │   └── VehicleRegistration.ts
-      ├── services/
-      │   ├── csvParser.ts
-      │   └── csvService.ts
-      ├── types/
-      │   ├── types.ts
-      │   └── routes.ts
-      ├── index.ts
-      ├── package.json
-      └── furtos.csv
-            
+    api-node/
+      ├── src/
+      │  ├── mock/
+      │  │   └── headerMapping.ts
+      │  ├── models/
+      │  │   ├── AccidentReport.ts
+      │  │   ├── Address.ts
+      │  │   ├── index.ts
+      │  │   ├── Suitor.ts
+      │  │   ├── Vehicle.ts
+      │  │   └── VehicleRegistration.ts
+      │  ├── services/
+      │  │   ├── csvParser.ts
+      │  │   ├── csvReader.ts
+      │  │   └── csvService.ts
+      │  ├── types/
+      │      └── types.ts
+      ├── routes.ts
+      └──  server.ts
+    ├── package.json
+    └── furtos.csv
+              
 ## 🧩 Tecnologias Utilizadas
 
 - **Fastify**
