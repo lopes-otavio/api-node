@@ -60,13 +60,31 @@ A aplicação estará disponível em `http://localhost:3333`
 
 ## 📂 Estrutura do Projeto
     src/
-    ├── server.ts          # Configuração principal do servidor
-    ├── routes.ts          # Definições de rotas da API
-    ├── services/
-    │   └── csvService.ts  # Serviço de parsing de CSV
-    └── models/
-        └── AccidentReport.ts  # Definição de tipo para relatórios
-        
+      ├── mock/
+      │   ├── headerMapping.ts
+      │   ├── AccidentReport.ts
+      │   ├── Address.ts
+      │   ├── index.ts
+      │   ├── Suitor.ts
+      │   ├── Vehicle.ts
+      │   └── VehicleRegistration.ts
+      ├── models/
+      │   ├── AccidentReport.ts
+      │   ├── Address.ts
+      │   ├── index.ts
+      │   ├── Suitor.ts
+      │   ├── Vehicle.ts
+      │   └── VehicleRegistration.ts
+      ├── services/
+      │   ├── csvParser.ts
+      │   └── csvService.ts
+      ├── types/
+      │   ├── types.ts
+      │   └── routes.ts
+      ├── index.ts
+      ├── package.json
+      └── furtos.csv
+            
 ## 🧩 Tecnologias Utilizadas
 
 - **Fastify**
