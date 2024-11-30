@@ -30,7 +30,7 @@ Para rodar a aplicação com recarregamento automático:
 
 `npm run dev`
 
-A aplicação estará disponível em `http://localhost:3000`
+A aplicação estará disponível em `http://localhost:3333`
 
 ## 🌐 Endpoints da API
 
