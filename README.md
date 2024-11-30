@@ -77,7 +77,7 @@ A aplicação estará disponível em `http://localhost:3333`
         │  ├── types/
         │  │    └── types.ts
         │  ├── routes.ts
-        │  └──  server.ts
+        │  └── server.ts
     ├── package.json
     └── furtos.csv
               
