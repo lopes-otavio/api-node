@@ -14,7 +14,11 @@ export const defaultConverters: Record<string, ValueConverter> = {
 	boolean: (value: string) => value.toLowerCase() === "true",
 	date: (value: string) => {
 		const [day, month, year] = value.split("/");
-		return new Date(`${year}-${month}-${day}`);
+		const date = new Date(`${year}-${month}-${day}`);
+		const formattedDay = String(date.getDate()).padStart(2, "0");
+		const formattedMonth = String(date.getMonth() + 1).padStart(2, "0");
+		const formattedYear = date.getFullYear();
+		return `${formattedDay}/${formattedMonth}/${formattedYear}`;
 	},
 };
 
