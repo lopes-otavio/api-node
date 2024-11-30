@@ -60,24 +60,24 @@ A aplicação estará disponível em `http://localhost:3333`
 
 ## 📂 Estrutura do Projeto
     api-node/
-      ├── src/
-      │  ├── mock/
-      │  │   └── headerMapping.ts
-      │  ├── models/
-      │  │   ├── AccidentReport.ts
-      │  │   ├── Address.ts
-      │  │   ├── index.ts
-      │  │   ├── Suitor.ts
-      │  │   ├── Vehicle.ts
-      │  │   └── VehicleRegistration.ts
-      │  ├── services/
-      │  │   ├── csvParser.ts
-      │  │   ├── csvReader.ts
-      │  │   └── csvService.ts
-      │  ├── types/
-      │      └── types.ts
-      ├── routes.ts
-      └──  server.ts
+        ├── src/
+        │  ├── mock/
+        │  │   └── headerMapping.ts
+        │  ├── models/
+        │  │   ├── AccidentReport.ts
+        │  │   ├── Address.ts
+        │  │   ├── index.ts
+        │  │   ├── Suitor.ts
+        │  │   ├── Vehicle.ts
+        │  │   └── VehicleRegistration.ts
+        │  ├── services/
+        │  │   ├── csvParser.ts
+        │  │   ├── csvReader.ts
+        │  │   └── csvService.ts
+        │  ├── types/
+        │  │    └── types.ts
+        │  ├── routes.ts
+        │  └──  server.ts
     ├── package.json
     └── furtos.csv
               
