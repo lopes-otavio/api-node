@@ -1,22 +1,22 @@
 import Address from "./Address";
 import Suitor from "./Suitor";
-import Vechile from "./Vechile";
+import Vehicle from "./Vehicle";
 
 export default class AccidentReport {
 	id: string;
 	incidentDate: string;
 	incidentPeriod: string;
-	suitors: Suitor[];
 	incidentLocal: Address;
-	stolenVechile: Vechile;
+	stolenVechile: Vehicle;
+	suitors?: Suitor[];
 
 	constructor(
 		id: string,
 		incidentDate: string,
 		incidentPeriod: string,
-		suitors: Suitor[],
 		incidentLocal: Address,
-		stolenVechile: Vechile
+		stolenVechile: Vehicle,
+		suitors?: Suitor[]
 	) {
 		this.id = id;
 		this.incidentDate = incidentDate;
