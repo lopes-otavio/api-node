@@ -1,9 +1,11 @@
 {
 	"name": "api-node",
 	"version": "1.0.0",
-	"main": "index.js",
+	"main": "./src/server.ts",
 	"scripts": {
-		"dev": "tsx watch src/server.ts"
+		"dev": "tsx watch src/server.ts",
+		"build": "tsc",
+		"start": "node dist/server.js"
 	},
 	"keywords": [],
 	"author": "Otávio Lopes",
