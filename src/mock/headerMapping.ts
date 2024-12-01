@@ -1,7 +1,7 @@
 import { NestedHeaderMapping } from "../types/types";
 
 export const headerMapping: NestedHeaderMapping = {
-	id: "NUMERO_BOLETIM",
+	id: "NUM_BO",
 	incidentDate: "DATAOCORRENCIA",
 	incidentPeriod: "PERIDOOCORRENCIA",
 	street: "LOGRADOURO",
