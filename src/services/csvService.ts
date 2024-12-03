@@ -55,5 +55,9 @@ export async function getCsvParsedData(): Promise<AccidentReport[]> {
 		);
 	});
 
-	return accidentReports;
+	const uniqueArray = accidentReports.filter(
+		(item, index, array) => array.findIndex((t) => t.id === item.id) === index
+	);
+
+	return uniqueArray;
 }
