@@ -27,7 +27,7 @@ export async function routes(fastify: FastifyInstance) {
 		"/accident-reports",
 		async (request, resp) => {
 			const newReport = request.body;
-			controlArray.push(newReport);
+			controlArray.unshift(newReport);
 			return resp.code(201).send(newReport);
 		}
 	);
